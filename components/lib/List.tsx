@@ -1,6 +1,10 @@
-import React from "react";
+import { ReactChild } from "react";
 
-export default function List(props) {
+interface ListProps {
+  Items: ReactChild[];
+}
+
+export default function List(props: ListProps) {
   var date = new Date();
   var randString = date.toISOString();
   return (
