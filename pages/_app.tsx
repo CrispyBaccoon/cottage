@@ -3,10 +3,20 @@ import { AppProps } from "next/app";
 import NavigationBar from "../components/NavigationBar";
 
 function App({ Component, pageProps }: AppProps) {
+  const NavigationItems = [
+    {
+      name: "Main",
+      pages: [
+        { title: "Home", ref: "/" },
+        { title: "About", ref: "/about" },
+      ],
+    },
+    { name: "Pages", pages: [] },
+  ];
   return (
     <div className="w-full h-full bg-[#F7F1E3] flex flex-col md:flex-row">
       <div>
-        <NavigationBar />
+        <NavigationBar Items={NavigationItems} />
       </div>
       <Component {...pageProps} />
     </div>
