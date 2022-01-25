@@ -1,7 +1,7 @@
 import { ReactChild } from "react";
 
 interface ParagraphProps {
-  children: ReactChild;
+  children: ReactChild | ReactChild[];
 }
 
 export default function Paragraph(props: ParagraphProps) {
