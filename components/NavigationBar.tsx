@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Header } from "./lib/Header";
+import Spacer from "./lib/Spacer";
 
 interface NavigationBarProps {
   Items: {
@@ -16,10 +18,11 @@ export default function NavigationBar(props: NavigationBarProps) {
       <ul className="list-none">
         {props.Items.map(({ name, pages }, nameIndex) => (
           <div key={`${nameIndex}`}>
-            <div>{name}</div>
+            <Spacer />
+            <Header>{name}</Header>
             <div>
               {pages.map(({ title, ref }, pageIndex) => (
-                <li key={`${nameIndex}${pageIndex}`}>
+                <li key={`${nameIndex}${pageIndex}`} className="my-2">
                   <Link href={ref}>
                     <a>{title}</a>
                   </Link>
