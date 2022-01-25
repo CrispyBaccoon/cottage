@@ -1,10 +1,9 @@
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",
     "./components/**/*.{html,js,jsx,ts,tsx}",
     "./pages/**/*.{html,js,jsx,ts,tsx}",
+    "./pages/**/*.tsx",
   ],
   presets: [],
   darkMode: "media", // or 'class'
