@@ -1,6 +1,9 @@
-import React from "react";
+interface ImageProps {
+  Source: string;
+  children: string;
+}
 
-export default function Image(props) {
+export default function Image(props: ImageProps) {
   return (
     <div className="relative w-11/12 my-5 md:my-8 mx-auto shadow-black shadow-sm">
       <a href={props.Source} className="">
