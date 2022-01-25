@@ -2,9 +2,9 @@ import { ReactChild } from "react";
 import { SubTitle, Title } from "./Header";
 
 interface ArticleProps {
-  children: ReactChild;
-  TitleName: Element;
-  SubtitleName: Element;
+  children: ReactChild | ReactChild[];
+  TitleName: string;
+  SubtitleName: string;
 }
 
 export default function Article(props: ArticleProps) {
