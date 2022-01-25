@@ -1,7 +1,7 @@
 import { ReactChild } from "react";
 
 interface HeaderProps {
-  children: ReactChild;
+  children: ReactChild | ReactChild[];
 }
 
 export function Title(props: HeaderProps) {
