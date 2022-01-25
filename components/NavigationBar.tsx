@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Header } from "./lib/Header";
-import Spacer from "./lib/Spacer";
+import { Header } from "./lib/Header.tsx";
+import Spacer from "./lib/Spacer.tsx";
 
 interface NavigationBarProps {
   Items: {
