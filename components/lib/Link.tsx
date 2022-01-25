@@ -1,7 +1,11 @@
-import React from "react";
-import { Link as IntLink } from "react-router-dom";
+import * as link from "next/link";
 
-export default function Link(props) {
+interface LinkProps {
+  Name?: string;
+  Ref: string;
+}
+
+export default function Link(props: LinkProps) {
   return (
     <a
       // className="text-gray-700 underline underline-offset-1 hover:bg-slate-200"
@@ -13,10 +17,10 @@ export default function Link(props) {
   );
 }
 
-export function InternalLink(props) {
+export function InternalLink(props: LinkProps) {
   return (
-    <IntLink to={`/${props.Ref}`}>
+    <link ref={`/${props.Ref}`}>
       <Link Ref="#" Name={props.Name ? props.Name : props.Ref} />
-    </IntLink>
+    </link>
   );
 }
