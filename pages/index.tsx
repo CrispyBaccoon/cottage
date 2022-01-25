@@ -1,5 +1,5 @@
-import { MainHeader, Header } from "../components/lib/Header";
 import Link, { InternalLink } from "../components/lib/Link";
+import { MainHeader, Header } from "../components/lib/Header";
 import Image from "../components/lib/Image";
 import Paragraph from "../components/lib/Paragraph";
 import Spacer from "../components/lib/Spacer";
