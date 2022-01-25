@@ -11,7 +11,7 @@ function App({ Component, pageProps }: AppProps) {
         { title: "About", ref: "/about" },
       ],
     },
-    { name: "Pages", pages: [] },
+    { name: "Pages", pages: [{ title: "Example", ref: "/example" }] },
   ];
   return (
     <div className="w-full h-full bg-[#F7F1E3] flex flex-col md:flex-row">
