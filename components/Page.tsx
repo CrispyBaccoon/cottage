@@ -10,7 +10,7 @@ interface PageProps {
 
 export default function Page(props: PageProps) {
   return (
-    <div>
+    <div className="w-11/12 md:w-9/12 my-6 md:my-8 mx-6 sm:mx-8 md:mx-auto font-normal">
       <Head>
         <title>{props.title + " | Cottage"}</title>
       </Head>
