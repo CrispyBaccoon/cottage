@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-normal {
+    @apply text-black dark:text-white;
+  }
+  .text-dim {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+}
+
+.imageCover:hover div.invisible {
+  visibility: visible;
+}
