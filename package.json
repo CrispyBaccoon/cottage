@@ -3,9 +3,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "dev:build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "export": "next export",
+    "build": "npm run dev:build && npm run export",
     "watch": "tailwindcss -i ./src/data/main.css -o ./dist/main.css --watch"
   },
   "dependencies": {
