@@ -22,7 +22,7 @@ export default function Link(props: LinkProps) {
 export function InternalLink(props: LinkProps) {
   return (
     <IntLink.default href={props.Ref}>
-      <div className={LinkStyling}>{props.Name ? props.Name : props.Ref}</div>
+      <a className={LinkStyling}>{props.Name ? props.Name : props.Ref}</a>
     </IntLink.default>
   );
 }
