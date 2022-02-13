@@ -7,5 +7,6 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  basePath: isProd ? "/cottage" : "",
   assetPrefix: isProd ? "/cottage/" : "",
 };
