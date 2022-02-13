@@ -7,6 +7,7 @@
     "start": "next start",
     "export": "next export",
     "build": "npm run dev:build && npm run export",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "watch": "tailwindcss -i ./src/data/main.css -o ./dist/main.css --watch"
   },
   "dependencies": {
